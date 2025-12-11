@@ -47,6 +47,11 @@ WORKDIR /app
 # Copy source code setelah dependency (optimalkan cache layer)
 COPY . .
 
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+ENV PATH="/root/.local/bin:$PATH"
+
+RUN uv pip install -e .
+
 # Gunakan Poetry atau pip, sesuaikan dengan environment kamu:
 # Contoh dengan pip:
 RUN uv pip install -e .
