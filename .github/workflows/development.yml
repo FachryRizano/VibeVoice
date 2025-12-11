@@ -1,6 +1,9 @@
 name: Vibe Voice Development CI/CD Pipeline
 
-
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build-base-image:
