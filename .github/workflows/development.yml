@@ -3,8 +3,8 @@ name: Vibe Voice Development CI/CD Pipeline
 
 
 jobs:
-
   build-base-worker-image:
+  runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
