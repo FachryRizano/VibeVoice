@@ -8,7 +8,6 @@ on:
 jobs:
   build-base-image:
     runs-on: ubuntu-latest
-    if: needs.determine-rebuild.outputs.needs_rebuild == 'true'
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
