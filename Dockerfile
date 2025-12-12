@@ -50,7 +50,7 @@ COPY . .
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 ENV PATH="/root/.local/bin:$PATH"
 
-RUN uv pip install -e .
+RUN uv pip install --system -e .
 
 # Gunakan Poetry atau pip, sesuaikan dengan environment kamu:
 # Contoh dengan pip:
