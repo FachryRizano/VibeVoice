@@ -52,5 +52,5 @@ ENV PATH="/root/.local/bin:$PATH"
 
 # Gunakan Poetry atau pip, sesuaikan dengan environment kamu:
 # Contoh dengan pip:
-RUN pip install -e .
+RUN pip install .
 RUN python ./demo/realtime_model_inference_from_file.py
